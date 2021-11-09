@@ -13,6 +13,7 @@ public class Order {
 
     public List<Drink> getDrinks() { return contents; }    
 
+
     @Override
     public String toString() {
         return "Order: " + owner + " / " + recipient + " / { " + contents + "}";
@@ -22,9 +23,9 @@ public class Order {
         public Drink(String name){ this.name = name; }
         private String name;
         public String getName() { return name; }
-        @Override public String toString() { return name; }
+        @Override public String toString() { return name; }      
     }
-    
+        
 }
 
 
